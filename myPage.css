@@ -1,0 +1,249 @@
+/*
+PAGE#1 (MAIN)Top Level Page
+*/
+.pageback{
+    background: black url(alps-cliff-clouds-167684.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.firstTitle{
+    color:rgb(105,105, 105, 0.5);
+    text-align: center;
+    font-family: Georgia;
+    font-size: 60px;
+    background-color: rgb(220, 220, 220, 0.6);
+}
+
+#studentInfo{
+    text-align: center;
+}
+
+#iconImage{
+    width: 50px;
+    height: 50px;
+}
+
+.container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-1 div{
+    border: 1px rgb(192,192,192,0.8)  ; 
+    padding: 10px;
+}
+
+li.menuItem{
+    margin: 0 0 10px 0; 
+}
+
+.box-1{
+    width:30%;
+}
+
+#box3{
+    background: rgb(255, 255, 255, 0.3);
+}
+
+
+#box2{
+    background: rgb(255, 255, 255, 0.5);
+}
+
+/* FOR THE DROP DOWN MENUS*/
+
+#box1{
+    position: relative;
+    display: inline-block;
+    background: rgb(255, 255, 255, 0.3);
+}
+
+.dropButton{
+    min-width: 210px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(47, 47, 79, 0.8);
+    color:white; 
+    padding:15px;
+    font-size:15px; 
+}
+
+.dropDownContent {
+    display:none;
+    position:relative;
+    background-color:rgb(192, 192, 192, 0.3);
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.2);
+    z-index:1;
+   
+}
+
+.dropDownContent a{
+    color:black;
+    padding: 13px 18px; 
+    text-decoration: none; 
+    display:block;
+    text-align: center;
+    padding-bottom: 30px
+}
+
+.menuItem{
+    font-family:"Impact", Charcoal, sans-serif;
+}
+
+.dropDownContent a:hover{background-color: rgb(51, 93, 127, 0.3);}
+
+#box1:hover .dropDownContent{display:block; margin: 0 auto;}
+
+#box1:hover .dropButton{background-color: rgb(51, 93, 127, 0.8);}
+
+#box2-1:hover .dropButton{background-color: rgb(51, 93, 127, 0.8);}
+
+#box2-1:hover .dropDownContent{display:block; margin: 0 auto;}
+
+
+#h31{
+    text-align: center;
+    color: black;
+}
+
+#p1{
+    text-align: center;
+}
+
+.img1{
+    padding-bottom: 30px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; 
+  
+}
+
+/* PAGE #2- Trails*/
+
+#page2{
+    background: url("alps-cliff-clouds-167684.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container-2{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.container-2 div{
+    border: 1px black;
+    padding: 10px;
+}
+
+
+#box2-1{
+    background-color: rgb(192,192,192,0.3);
+    width:30%;
+}
+
+#box2-2{
+    background-color: rgb(192, 192, 192, 0.7);
+    width: 60%;
+    margin-right:200px
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table.trailTables, th, td{
+    border: 5px inset rgb(47, 47, 79, 0.6);
+    max-width: 100%;
+    table-layout: fixed;
+
+}
+
+tr:nth-child(even){background-color: rgb(95 , 158, 160, 0.3); }
+
+.hike{
+    width: 300px;
+    height: auto;
+}
+
+.tItem{
+    text-align: center;
+    font-family:"Impact", Charcoal, sans-serif;
+}
+
+.cItem{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* PAGE #3 */
+
+#page3{
+    background: black url(alps-cliff-clouds-167684.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.container-3 div{
+    margin:0 auto;
+}
+
+.listCamp{
+    display:inline;
+    padding:0;
+    list-style-type: none;
+}
+
+.campPar{
+    background: rgb(192, 192, 192, 0.7);
+}
+
+.camp{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 300px;
+    height: auto;
+}
+
+.ex{
+    text-align: center;
+}
+
+/* PAGE #4 */
+#page4{
+    background: black url(alps-cliff-clouds-167684.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.container-4{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.container-4 div{
+    border: 1px black;
+    padding: 10 px;
+}
+
+#box4-4{
+    background-color: rgb(192,192,192,0.3);
+    width:30%;
+    margin-right:500px;
+}
+
+.campingList li{
+    margin: 15px 0;
+}
+
+#campItems{
+    padding-top: 10px;
+    display:block;
+    margin: 0 auto;
+}
