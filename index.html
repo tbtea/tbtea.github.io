@@ -1,84 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alberta Hikes</title>
-    <link rel="stylesheet" href="myPage.css">
+    <script type="text/javascript" src="calc.js"></script>
+    <title>SENG513 Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script>src = "calc.js"</script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </head>
-<body class="pageback">
 
-
-    <h6 id="studentInfo">
-        SENG513 - Assignment One - Tony Tea
-    </h6>
-  
-
-    <h1 class="firstTitle">Alberta Adventure
-        <img id="iconImage" src="climbing.png" >
-    </h1>
-
-    <!-- Menu bar for navigation, drop down menu to the three other pages.
-    Four pages were required for this assignment. Four including the Top-Level Page.-->
-    <div class="container-1">
-            <div class="box-1" id="box1">
-                <button class="dropButton">Menu</button>
-                <div class="dropDownContent">
-                    <a href="trails.html" class="menuItem">Top Five Trails</a>
-                    <a class = "menuItem"
-                    href="campsites.html">Top Five Campsites</a>
-                    <a class="menuItem" href="camptips.html">Camping Tips</a>
-                </div>
+<body>
+    <br><br><br><br>
+    <div>
+        <div class="firstContainer pane">
+            <input type="text" class="displayScreen" id="answer" readonly>
+            <input type="text" id="iData" class="displayScreen">
+            <div id="topSet">
+                <button class="btn btn-primary custom" onclick="retrieveNums('(')">(</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums(')')">)</button>
+                <button class="btn btn-primary custom" onclick="clearOut()" id=clearBtn>C</button>
+            </div>
+            <div>
+                <button class="btn btn-primary custom" onclick="retrieveNums('7')">7</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('8')">8</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('9')">9</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('/')">/</button>
+            </div>
+            <div>
+                <button class="btn btn-primary custom" onclick="retrieveNums('4')">4</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('5')">5</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('6')">6</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('*')">*</button>
+            </div>
+            <div>
+                <button class="btn btn-primary custom" onclick="retrieveNums('1')">1</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('2')">2</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('3')">3</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('-')">-</button>
+            </div>
+            <div>
+                <button class="btn btn-primary custom" onclick="retrieveNums('0')">0</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('.')">.</button>
+                <button class="btn btn-primary custom" onclick="checkInput()">=</button>
+                <button class="btn btn-primary custom" onclick="retrieveNums('+')">+</button>
             </div>
 
-            <!-- An About Section, with variou images, describing the purpose of the website-->
-            <div class="box-1" id="box2">
-                    <h3 id="h31">About</h3>
-                    <p id="p1">  Welcome to the simple website designed for a Software Engineering Web Based Systems course! We look into a few great hiking trails that you can attempt this summer. Navigate through the pages using the menu on the left side. Each page will have a link leading back to this original page. Useful links to other websites are included on the right hand side. In the menu also includes a check list of requirements fulfilled for this first assignment.  </p>
-                    
-                    <img src="johnsons-canyon.jpg" class="img1">
+        </div>
 
-                    <img src="Moraine Lake.jpg" class="img1">
-
-                    <img src="221702628_cff7f852e8_z.jpg" class="img1">
-                    
-                    <img src="solar-eclipse-2017-8135-684x1024.jpg" class="img1">
-            </div>
-            
-            <!-- Some useful links provided in a list for requirement-->
-            <div class="box-1" id="box3">  
-                Useful Links
-                <ul>
-                    <li class = "menuItem">
-                        <a href="https://www.alltrails.com/canada/alberta">Alberta Trails</a>
-                    </li>
-                    <li class = "menuItem"> 
-                        <a href="https://blog.liftopia.com/10-essential-hiking-tips-beginner-hike/">Hiking For Beginners</a>
-                    </li>
-                    <li class = "menuItem">
-                        <a href="https://www.reddit.com/r/CampingandHiking/">
-                        Camping and Hiking Subreddit</a>
-                    </li>
-                    <li class = "menuItem">
-                        <a href="https://www.albertaparks.ca/albertaparksca/visit-our-parks/camping/">
-                        Camping Alberta Parks</a>
-                    </li>
-                    <li class = "menuItem">
-                        <a href="https://www.albertacampgroundguide.ca/campgrounds/">
-                        Alberta Campgrounds</a>
-                    </li>
-                    <li class = "menuItem"> 
-                        <a href="https://www.tripadvisor.ca/Attractions-g154909-Activities-Alberta.html">
-                        Alberta Activities</a>
-                    </li>
-                </ul>
-            </div>
-        
-        
-    </div>
-
-
-   
 </body>
+
 </html>
